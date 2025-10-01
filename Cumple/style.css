@@ -1,0 +1,59 @@
+/* Estilo del cuerpo: Define el fondo de toda la página */
+body {
+    background-color: #f0f8ff; /* Color azul claro muy suave como fondo principal */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle fill="%23ffd700" cx="10" cy="10" r="5"/></svg>'); /* Un patrón sutil de confeti/círculos dorados */
+    background-repeat: repeat;
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Color de texto oscuro */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    text-align: center;
+}
+
+/* Estilo del contenedor principal del mensaje */
+.contenedor-cumpleanos {
+    background-color: #ffffff; /* Fondo blanco para la caja del mensaje */
+    border: 5px solid #ff69b4; /* Borde de color rosa fuerte (hot pink) */
+    border-radius: 20px; /* Esquinas redondeadas */
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra para que se vea tridimensional */
+    max-width: 80%;
+    transform: rotate(-1deg); /* Ligera rotación para un efecto festivo */
+}
+
+/* Estilo para el título */
+h1 {
+    color: #ff4500; /* Color naranja rojizo vibrante */
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite alternate; /* Animación de rebote sutil */
+}
+
+/* Estilo para el párrafo del mensaje */
+p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Estilo para la imagen */
+.imagen-decorativa {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 3px solid #ffd700; /* Borde dorado alrededor de la imagen */
+}
+
+/* Animación de Rebote (opcional) */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
