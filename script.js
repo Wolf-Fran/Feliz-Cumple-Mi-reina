@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
             particle.style.backgroundColor = color;
 
             // Calcula un ángulo y distancia aleatorios para la dispersión (la explosión)
-            const angle = Math.random() * 2 * Math.PI;
-            const distance = Math.random() * 80 + 50; // Distancia de 50px a 130px
+            const angle = Math.random() * 4 * Math.PI;
+            const distance = Math.random() * 100 + 80; // Distancia de 50px a 130px
             
             // Calcula el desplazamiento final (variables CSS)
             const finalX = Math.cos(angle) * distance;
